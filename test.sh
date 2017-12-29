@@ -11,10 +11,15 @@ echo "-----------py-solc installed-----------"
 
 sudo pip install https://github.com/geekybot/py-geth-mod/raw/master/py-geth-mod.zip
 echo "-----------py-geth installed-----------"
-sudo pip install https://github.com/geekybot/web3py/raw/master/web3py.zip
+git clone https://github.com/geekybot/web3py.git
+cd web3py
+sudo python setup.py install
+cd ../
+sudo rm -rf web3py
 echo "-----------web3py installed------------"
 sudo apt-get install qt5-default
 sudo apt-get install python-pyqt5
+sudo apt-get install python-setuptools
 git clone https://github.com/geekybot/pyqtreq.git
 cd pyqtreq/sip-4.19.6
 sudo python configure.py
