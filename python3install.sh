@@ -1,4 +1,5 @@
 #!/bin/sh
+sudo apt-get install python3-pip
 sudo apt-get install software-properties-common
 sudo add-apt-repository -y ppa:ethereum/ethereum
 sudo apt-get update
